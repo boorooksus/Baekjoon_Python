@@ -18,3 +18,5 @@ def getNum(cnt):
             check[i] = False
 
 getNum(0)
+
+#백트래킹

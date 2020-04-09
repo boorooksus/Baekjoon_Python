@@ -141,8 +141,182 @@ while(1):
         change = list(map(int, input().split()))
     print("case %s :"%case, a, b_list, n, change)
     case += 1'''
-n = 3
+'''n = 3
 d_list = [7, 10, 2]
 d_dict = {a + 1:d_list[a] for a in range(n)}
-print(d_dict)
+print(d_dict)'''
 
+'''import queue
+q = queue.Queue()
+q.put([1, 2])
+x = q.get()
+print(x[1])'''
+
+'''arr = []
+arr.append(list(map(int, str(stdin.readline().strip()))))
+print(arr)'''
+
+'''maze = []
+maze.append(list(map(int, str(input()))))
+print(maze)'''
+
+'''import queue
+q = queue.Queue()
+q.put(3)
+
+def func():
+    x = q.get()
+    print(x)
+    return
+
+func()'''
+
+'''from collections import deque
+q = deque()
+q.append(3)
+print(len(q))
+x = q.pop()
+print(x)'''
+
+'''h = 3
+n = 3
+container = []
+for i in range(h):
+    layer = []
+    for j in range(n):
+        layer.append(list(map(int, stdin.readline().split())))
+    container.append(layer)
+
+print(container)'''
+
+'''from collections import deque
+q = deque()
+q.appendleft(1)
+q.appendleft(2)
+print(list(q))
+a = q.pop()
+print(q)
+print(a)'''
+
+'''l = ['1', '2', '3']
+i = int("".join(l))
+print("".join(l))
+print(i)
+
+splitted_str = ['Hi', 'my', 'name', 'is', 'limcoing']
+
+joined_str = "-".join(splitted_str)
+print(joined_str)
+
+num = [1, 2, 3]
+print([int("".join(map(str, num)))])'''
+
+'''cdt = []
+cdt.append(list(map(int, stdin.readline().split())))
+print(cdt)'''
+
+'''def meet(comp, number, strike, ball):
+    comp_list = list(int(i) for i in str(comp))
+    num_list = list(int(i) for i in str(number))
+    st = 0
+    ba = 0
+    for i in range(3):
+        if comp_list[i] == num_list[i]:
+            st += 1
+    for i in comp_list:
+        if i in num_list:
+            ba += 1
+    ba -= st
+    if st == strike and ba == ball:
+        return True
+    else:
+        return False
+
+comp = 324
+number = 123
+strike = 1
+ball = 1
+print(meet(comp, number, strike, ball))'''
+
+'''blank = [' ', ' ', ' ']
+print(*blank)'''
+
+'''a = [0]
+b = [1, 2, 3]
+print(b + a)'''
+
+'''import sys
+
+num = int(input())
+
+def star(i, j):
+    while(i != 0):
+        if i == 4 and j == 3:
+            abcdef = 0
+        # 몫이 1인 경우
+        if(i % 3 == 1 and j % 3 == 1):
+            sys.stdout.write(' ')
+            return None
+        # 3으로 나누어서 위의 if문에 걸리면 그 부분도 빈칸 처리
+        i = i // 3
+        j = j // 3
+    sys.stdout.write('*')
+
+for i in range(num):
+    for j in range(num):
+            star(i, j)
+    sys.stdout.write('\n')'''
+
+'''a = 3
+print("Hi%s"%a)'''
+
+'''from sys import stdin
+
+a = []
+n = int(stdin.readline())
+for i in range(n):
+    a.append(int(stdin.readline()))
+
+a.sort()
+for i in range(n):
+    print(a[i])'''
+
+'''count = [0 for i in range(10001)]
+n = int(stdin.readline())
+for i in range(n):
+    idx = int(stdin.readline())
+    count[idx] += 1
+
+for i in range(10001):
+    cnt = count[i]
+    for j in range(cnt):
+        print(i)'''
+
+'''q = [0, 1, 2, 3, 3, 3]
+q.remove(max(q))
+print(q)'''
+
+'''string = [sum([int(plus) for plus in minus.split('+')]) for minus in input().split('-')]
+print(string[0] - sum(string[1:]))'''
+
+'''arr = [[[7, 4], [1, 2], [3, 7]], [[2, 7], [7, 5]]]
+idx = 0
+if 5 in arr[1:2]:
+    idx =  arr[1:2].index(5) + 1
+print(idx)'''
+
+'''import heapq
+pq = []
+heapq.heappush(pq, (2,3))
+heapq.heappush(pq, (3,4))
+
+a, b = heapq.heappop(pq)
+print(a)'''
+
+'''for _ in range(5):
+    print("first", _)
+    for _ in range(2):
+        print("check", _)'''
+arr = [5, 2, 3]
+ans = min(arr)
+print(ans)
