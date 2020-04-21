@@ -41,4 +41,5 @@ for i in range(0, 101):
 
 print(max(d))
 
-#문해기 4주차 bfs 유형
+#문해기 4주차 유형
+#dfs로 푸는게 더 간단
